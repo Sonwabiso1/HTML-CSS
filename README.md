@@ -34,7 +34,7 @@ There are four HTML elements related to this, two for bold and two for italic. S
 For Italics we use `<em>` when we want to emphasize a word and we use `<i>`when we want to make a disction, e.g when we want to name a TV show.
 </p>
 <p>
-  For Bold,  first one is the `<strong>` element, which is used to show importance, seriousness, or urgency. It is like saying, "Hey, this needs to stand out!" This element adds meaning to the text. On the other hand, the `<b>` element is more generic and neutral. It does not carry any specific meaning
+  For Bold,  first one is the ` <strong> ` element, which is used to show importance, seriousness, or urgency. It is like saying, "Hey, this needs to stand out!" This element adds meaning to the text. On the other hand, the `<b>` element is more generic and neutral. It does not carry any specific meaning
 </p>
 <p>It may seem like they look exactly the same visually, but they serve different purposes. We are not just playing with typography here; we are communicating semantic and human meaning.
 </p>
