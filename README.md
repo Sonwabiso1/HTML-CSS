@@ -44,6 +44,31 @@ In HTML, there is another type of list called the "definition list" or "descript
 
 To create a definition list, we use specific elements. The term or key is enclosed in a `<dt>` tag, which stands for definition term. The description or value is enclosed in a `<dd>` tag, which stands for definition description. You can have multiple descriptions for each term by using multiple `<dd>` tags. The entire list is wrapped in a `<dl>` tag, representing the definition list.
 
+**HTML Quotes**
+
+When we want to distinguish a qoute from surrounding text in HTML we wrap in the `<blockquote>` element and to attribute the quote we use the `<cite>` element.<br>
+These two elements serve a semantic purpose. They tell the computer, "Hey, this is what this is".<br>
+With CSS we can make these elements look however we want.
+
+<p>
+  Lets talk about qoutes that are not blockqoutes but appear within the text.  These quotes are simply typed in, but we believe they should be curly quotes, not straight ones. However, different languages and regions have their own conventions for displaying quote marks.<br>
+  
+To make things easier, we can use the `<q>` element in HTML, which stands for quote. By using this element, the browser will automatically provide the appropriate quote marks for us.<br>
+Comparing the block quote element to the `<q>` element is a good example of understanding HTML. Some HTML elements, like `<qstrong>`, `<b>`, `<I>`, and `<em>`, are called "inline" because they are meant to wrap around phrases of text that are inline with other content. They serve a similar purpose as the `<q>` element. `<br>`
+There are certain elements in HTML known as block-level elements, like block quotes, paragraphs, and unordered lists. These elements essentially create separate blocks on the page. You can think of them as standalone entities that can be followed by another block. <br>
+HTML elements can have attributes provide additional information to HTML elements.<br>
+An example would be the datetime attribute which allows us to specify the date or time in a format that computers can understand. We write it like this: `<time datetime="2025-05-08">May 8, 2025</time>`.
+</p>
+
+**HTML Date and Time Inputs**
+This element is used to mark anything that specifies a time of day, a date, or a duration.<br>
+To format a specific moment or range in time in a way that computers can understand, we use the `<time>` element.
+Use this link below to learn more about Date and Time Inputs. <br>
+[The (Date) Time element reference mdn web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)
+
+**HTML Code, pre and br**
+
+
 ## HTML Capabilities
 
 ## HTML Navigation and Linking
