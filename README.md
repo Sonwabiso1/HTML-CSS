@@ -127,6 +127,19 @@ This menu can be styled with CSS and includes ARIA attributes for accessibility.
 
 ## 🖼 HTML Working with Graphics and Images
 
+**Images**
+
+When we want to add an image to a webpage, we use the image element, which is simply written as IMG.<br>
+Here is the cool part: there are four attributes that need to be included for every image. 
+
+-First, we have the source attribute (SRC), which tells the browser which image file to load. 
+-Then we have the alt attribute (ALT), which provides a text description of the image. 
+-Lastly, we have the width and height attributes, which determine the size of the image. So, every image should have all four of these attributes.
+
+Key thing to note: An ALT attribute, serves as a replacement for the image when it cannot be seen. Make the ALT text interesting. Adding the dimensions of the image gives the browser a headstart in loading webpage content.
+
+
+
 ## 🎥 HTML Working with Media
 
 ## 🔍 HTML Content Identification
