@@ -52,8 +52,10 @@ With CSS we can make these elements look however we want.
 
 <p>
   Lets talk about qoutes that are not blockqoutes but appear within the text.  These quotes are simply typed in, but we believe they should be curly quotes, not straight ones. However, different languages and regions have their own conventions for displaying quote marks.<br>
-  
-To make things easier, we can use the `<q>` element in HTML, which stands for quote. By using this element, the browser will automatically provide the appropriate quote marks for us.<br>
+</p>
+
+To make things easier, we can use the `<q>` element in HTML, which stands for quote. By using this element, the browser will automatically provide the appropriate quote marks for us.
+<p>
 Comparing the block quote element to the `<q>` element is a good example of understanding HTML. Some HTML elements, like `<qstrong>`, `<b>`, `<I>`, and `<em>`, are called "inline" because they are meant to wrap around phrases of text that are inline with other content. They serve a similar purpose as the `<q>` element. `<br>`
 There are certain elements in HTML known as block-level elements, like block quotes, paragraphs, and unordered lists. These elements essentially create separate blocks on the page. You can think of them as standalone entities that can be followed by another block. <br>
 HTML elements can have attributes provide additional information to HTML elements.<br>
@@ -69,14 +71,14 @@ Use this link below to learn more about Date and Time Inputs. <br>
 [The (Date) Time element reference mdn web docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time)
 
 **HTML Code, pre and br**
-
-Sometimes you might want to showcase code on a webpage. Let's say you are writing an article on webpage creation or you want to explain some code syntax. Here is an example: we have a sentence with CSS code in the middle. We want to highlight that code and make it look like actual code. For this, use the code element. Put an opening `<code>` tag before the CSS snippet and a closing code tag afterward. <br>
+<p>
+Sometimes you might want to showcase code on a webpage. Let's say you are writing an article on webpage creation or you want to explain some code syntax. Here is an example: we have a sentence with CSS code in the middle. We want to highlight that code and make it look like actual code. For this, use the code element. Put an opening `<code>` tag before the CSS snippet and a closing code tag afterward. </p>
 Let's discuss the br and pre elements. Usually, when we write code, we can add as many spaces and line breaks as we want, and the browser will ignore them. <br>
 The `<br>` element adds a line break and `<pre>` elements maintains the space between the tags.
 
 **HTML Superscripts, Subscripts and Small text**
-
-Subscripts, superscripts, and small text can be used where you need to mark up certain bits of content as having a different meaning than the rest. Subscripts are characters that are set below the normal baseline for text. Did you ever take a chemistry class and learn how to write the formula for water, H2O, where the two are lower down than the H and the O? The two characters are typeset as a subscript. It is set lower down. Superscripts are characters that are set above the normal baseline of text. <br>
+<p>
+Subscripts, superscripts, and small text can be used where you need to mark up certain bits of content as having a different meaning than the rest. Subscripts are characters that are set below the normal baseline for text. Did you ever take a chemistry class and learn how to write the formula for water, H2O, where the two are lower down than the H and the O? The two characters are typeset as a subscript. It is set lower down. Superscripts are characters that are set above the normal baseline of text. </p>
 
 We use `<sup>`, `<sub>` elements to achieve this. And then we use `<small>` to achieve small text in webpage.
 
@@ -91,16 +93,20 @@ Whenever you are unsure about what is happening, just turn to the developer tool
 
 **HTML Attributes**
 
-We have already explored one attribute when discussing the time element. Keep in mind that certain attributes are specific to particular elements, such as the daytime attribute, which we only use with the time element. On the other hand, some attributes work with multiple elements but not all of them.<br>
-When looking at global attributes in HTML that work universally, we will focus on four highly useful ones. The class attribute is the most commonly used. It allows us to assign a reusable name to any element, which can then be styled using CSS for all elements sharing that class. <br>
+<p>
+  We have already explored one attribute when discussing the time element. Keep in mind that certain attributes are specific to particular elements, such as the daytime attribute, which we only use with the time element. On the other hand, some attributes work with multiple elements but not all of them.<br>
+When looking at global attributes in HTML that work universally, we will focus on four highly useful ones. The class attribute is the most commonly used. It allows us to assign a reusable name to any element, which can then be styled using CSS for all elements sharing that class. 
+</p>
 Another popular attribute is the ID. It is similar to the class attribute, but we can only use unique names once on an entire HTML page. IDs can be used for CSS targeting, but are more specific, which can sometimes cause issues. As a result, CSS developers usually prefer using classes. <br>
 However, IDs come in handy when we need to address specific elements in JavaScript or targeted links. <br>
 HTML offers many attributes that enhance user interaction and provide hooks into browser power. These attributes, such as "content editable," allow interaction with the screen, keyboard, and assistive devices. <br>
 
 **ARIA Roles**
 
+<p>
 ARIA Roles are like extra attributes that we can add to HTML elements to make them more meaningful and help browsers understand what they represent. The goal is to rely on proper HTML elements to convey the right message about the content's meaning, without needing ARIA Roles.<br>
 ARIA Roles come into play when we want to provide essential information to assistive technologies like screen readers, braille displays, and magnifiers to ensure a website is fully accessible. ARIA came about when the web began replacing native applications, and it is particularly valuable for ensuring that everyone can use the full functionality of a complex interface in an app.
+</p>
 Developer tools in Browsers like firefox and Chrome have an Accesibility Inspector. The accessibility tree is like a companion to the DOM tree, which the browser creates from the website's content. While the DOM tree represents the structure of the HTML, the accessibility tree is crucial for assistive devices like screen readers. It allows them to provide a better experience to users. 
 
 **Formatting HTML**
@@ -123,9 +129,11 @@ When we want to create a link, we use the A element, which stands for anchor. To
 
 **HTML Url Pathways**
 
-When it comes to forming links, absolute URLs are just one option. When linking to something within the same site and domain as the page containing the link, a relative URL can be used instead.<br>
-Creating a relative URL is not only useful for the A element (linking), but it is also a skill used to reference image files, video files, CSS, JavaScript files, or any other where a file’s path is specified. <br>
-To create a relative URL, omit the domain name but include the initial slash at the beginning. This tells the browser to start from the root level of the file structure, which is the outermost top level. Alternatively, we can write the path to be relative to the file where the link is written.<br>
+When it comes to forming links, absolute URLs are just one option. When linking to something within the same site and domain as the page containing the link, a relative URL can be used instead.
+<p>
+  Creating a relative URL is not only useful for the A element (linking), but it is also a skill used to reference image files, video files, CSS, JavaScript files, or any other where a file’s path is specified. <br>
+To create a relative URL, omit the domain name but include the initial slash at the beginning. This tells the browser to start from the root level of the file structure, which is the outermost top level. Alternatively, we can write the path to be relative to the file where the link is written.
+</p>
 <p>
   Here is an example to help understand how URLs work. Imagine there is a file called styles.css in a directory named CSS. Let's say we want to include a link in our CSS file that points to the logo.gif file, which is located in the images folder. We have two options to write the URL: 
 
@@ -147,8 +155,10 @@ Let's explore common ways to make menus or navigation bars. Imagine we want to m
     </ul>
   </nav>
 ```
-Each link is wrapped in an element with the correct URL, and then enclosed in an "li" element to create a list of links. To maintain the order, wrap the whole list in a "ul" element, which represents an unordered list. Finally, encompass the entire menu in a "nav" element to indicate that it is the site's navigation.
+<p>
+  Each link is wrapped in an element with the correct URL, and then enclosed in an "li" element to create a list of links. To maintain the order, wrap the whole list in a "ul" element, which represents an unordered list. Finally, encompass the entire menu in a "nav" element to indicate that it is the site's navigation.
 To give the menu a visual appearance, apply CSS styling. Without the styling, it appears as a plain list, however, we also want screen readers and assistive devices to understand that it is the main menu. Now add some attributes to convey its purpose. Assign the role "navigation" to the "nav" element, which signifies that it represents the main navigation of the page. Additionally, include an "aria label" for the main menu, providing a descriptive label that can be read aloud by a screen reader. Remember, this is not the only way to correctly mark up a main navigation menu. 
+</p>
 
 
 ## 🖼 HTML Working with Graphics and Images
