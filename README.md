@@ -137,16 +137,16 @@ The first version, /images/logo.gif, creates a URL that is relative to the root 
 **Navigation**
 
 Let's explore common ways to make menus or navigation bars. Imagine we want to make a main menu bar for our website. We have four links: home, people, prices, and contact. <br>
-<pre>
-  `<nav role="navigation" aria-lable="main-menu">
+`<pre>
+  <nav role="navigation" aria-lable="main-menu">
     <ul class="navbar">
       <li><a href="/">Home</a></li>
       <li><a href="People">People</a></li>
       <li><a href="Prices">Prices</a></li>
       <li><a href="Contact">Contact</a></li>
     </ul>
-  </nav>`
-</pre>
+  </nav>
+</pre>`
 Each link is wrapped in an element with the correct URL, and then enclosed in an "li" element to create a list of links. To maintain the order, wrap the whole list in a "ul" element, which represents an unordered list. Finally, encompass the entire menu in a "nav" element to indicate that it is the site's navigation.
 To give the menu a visual appearance, apply CSS styling. Without the styling, it appears as a plain list, however, we also want screen readers and assistive devices to understand that it is the main menu. Now add some attributes to convey its purpose. Assign the role "navigation" to the "nav" element, which signifies that it represents the main navigation of the page. Additionally, include an "aria label" for the main menu, providing a descriptive label that can be read aloud by a screen reader. Remember, this is not the only way to correctly mark up a main navigation menu. 
 
