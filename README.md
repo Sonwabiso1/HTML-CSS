@@ -182,7 +182,7 @@ After discussing how to add an image to a web page, let's explore how to match a
 </figure>
 ```
 
-### Explanation
+**Explanation**
 
 - **`<figure>`**: This element is used to group the image and its caption, providing a semantic meaning to the browser and search engines.
 - **`<img>`**: The image element where `src` is the path to the image file and `alt` provides alternative text for the image.
