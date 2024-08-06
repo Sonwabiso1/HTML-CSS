@@ -76,7 +76,7 @@ Use this link below to learn more about Date and Time Inputs. <br>
 **HTML Code, pre and br**
 
 <p>
-  Sometimes you might want to showcase code on a webpage. Let's say you are writing an article on webpage creation or you want to explain some code syntax. Here is an example: we have a sentence with CSS code in the middle. We want to highlight that code and make it look like actual code. For this, use the code element. Put an opening `<code>` tag before the CSS snippet and a closing code tag afterward.
+  Sometimes you might want to showcase code on a webpage. Let's say you are writing an article on webpage creation or you want to explain some code syntax. Here is an example: we have a sentence with CSS code in the middle. We want to highlight that code and make it look like actual code. For this, use the code element.
 </p>
     
 Let's discuss the br and pre elements. Usually, when we write code, we can add as many spaces and line breaks as we want, and the browser will ignore them. <br>
