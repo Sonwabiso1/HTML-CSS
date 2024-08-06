@@ -136,9 +136,59 @@ Here is the cool part: there are four attributes that need to be included for ev
 - Then we have the alt attribute (ALT), which provides a text description of the image. 
 - Lastly, we have the width and height attributes, which determine the size of the image. So, every image should have all four of these attributes.
 
-Key thing to note: An ALT attribute, serves as a replacement for the image when it cannot be seen. Make the ALT text interesting. Adding the dimensions of the image gives the browser a headstart in loading webpage content.
+Key things to note: An ALT attribute, serves as a replacement for the image when it cannot be seen. Make the ALT text interesting. Adding the dimensions of the image gives the browser a headstart in loading webpage content.
 
+**Image Format**
 
+The image file itself is a crucial aspect to consider when putting an image on a webpage. It needs to be in a file format that web browsers can understand, and there are various options available. <br>
+There are four main file formats commonly used on the web these days, each with its own strengths and weaknesses when it comes to compressing images. <br>
+- GIF: GIFs are great for compressing illustrations that have large areas of the same color, but it falls short when it comes to photographs. It only supports 256 colors, and images can end up looking pixelated, unless you want that retro vibe.
+- SVG: SVGs are perfect for logos, icons, and other types of illustrations. Unlike GIF, SVG is a vector file that contains instructions for drawing rather than individual pixels. This means it can be scaled to any size without losing quality, and the file size remains small.
+- JPG: JPGs are a popular choice for compressing photographs. Most digital cameras save images in JPG format, but when placed on the web, it is important to resize and compress them appropriately. Avoid using gigantic, half-compressed JPGs on your websites as they will slow the loading speed.
+- PNG: PNG is a newer format that works well when you need transparency in a photograph. It sometimes outperforms both GIF and JPG in compressing certain types of images. When manually compressing files, try different options to find the smallest file size.
+
+**Responsive Images**
+
+Images have different resolutions, some higher than others. In your `<img>` element you can set a source set attribute to accomodate different media sreens. This can help make your webpage faster and increase accessability for devices with different pixel densities, storage and network connections.
+
+**Responsive Width**
+
+If we know the image will be much smaller than the whole page, we should give the browser more information to make a better choice. Use the sizes attribute in HTML to specify which image to use at different breakpoints. This way, the browser can download the right-sized image for your layout.
+
+**Responsive Pictures**
+
+When you want to display a photo on different screens with varying levels of detail, the `<picture>` element is a powerful tool. It allows you to show different parts of the image based on the screen size, optimizing the viewing experience. Here's how it works:
+
+1. **Basic Setup**: Start with the `<img>` element, providing ALT text and the URL of the image. This ensures compatibility with older browsers like Internet Explorer 11.
+
+2. **Wrap with `<picture>`**: Place the `<img>` element inside a `<picture>` element. The `<picture>` element acts as a container for different image sources.
+
+3. **Define Sources**: Use multiple `<source>` elements within the `<picture>` element to specify alternative images for different screen sizes.
+   - For smaller screens, use the `srcset` attribute in a `<source>` element to point to a cropped version of the photo, sized at 320 pixels wide. Set the `media` attribute to a condition like `max-width: 600px` to load this version when the viewport is smaller than 600 pixels.
+   - For larger screens, use another `<source>` element with a media query like `min-width: 600px` to load a landscape version of the photo when the viewport is at least 600 pixels wide.
+
+4. **Responsive Switching**: The browser will use the appropriate image based on the screen size and resolution, switching between the cropped and wide versions as needed.
+
+By using the `<picture>` element with `<source>` and `srcset`, you can provide optimized images for various screen sizes, enhancing performance and user experience.
+
+**Figcaption and Figures**
+
+After discussing how to add an image to a web page, let's explore how to match a caption to that image. We have two additional elements to consider when it comes to images, or specifically, figures. Here is a straightforward illustration to understand this better.
+
+```html
+<figure>
+  <img src="path/to/dog.jpg" alt="A happy dog playing in the park">
+  <figcaption>A happy dog playing in the park</figcaption>
+</figure>
+```
+
+### Explanation
+
+- **`<figure>`**: This element is used to group the image and its caption, providing a semantic meaning to the browser and search engines.
+- **`<img>`**: The image element where `src` is the path to the image file and `alt` provides alternative text for the image.
+- **`<figcaption>`**: This element provides a caption for the image, which is clearly associated with the image through its placement within the `<figure>` element.
+
+This markup ensures that the image and caption are semantically connected, enhancing accessibility and search engine understanding.
 
 ## 🎥 HTML Working with Media
 
