@@ -112,10 +112,44 @@ In HTML, comments are inserted by typing `<!--` at the start and `-->` at the en
 
 The symbols <, >, and & are important characters in HTML, but what happens when we want to actually use them in our content?<br>
 If we write these symbols with spaces around them, they will appear as regular content. However, if we start writing something that resembles an HTML element, it magically disappears. The browser assumes that it is part of HTML code and does not display it. Now, if you are using a content management system like WordPress or a tool like markdown, chances are it will handle these characters for you without any issues but there may be times when you need to take care of it yourself.<br>
-We can use the code "&nbsp;" to insert a non-breaking space between the two names, ensuring they stay on the same line. <br>
+We can use the code `&nbsp;` to insert a non-breaking space between the two names, ensuring they stay on the same line. <br>
 The [W3C](https://www.w3schools.com/html/html_symbols.asp) has a handy reference chart for all these character entities that you can use. 
 
 ## 🔗 HTML Navigation and Linking
+
+**HTML Links**
+
+When we want to create a link, we use the A element, which stands for anchor. To do this, we need to add an href attribute with a URL enclosed in quotes. This URL is where the link will take us. The term href stands for Hypertext Reference, a nerdy phrase from the past. Between the opening and closing A tags, we can place text or images, or both, to make them clickable. For example, we can turn the phrase "this is a link" into an actual link that takes us to example.com when clicked.
+
+**HTML Url Pathways**
+
+When it comes to forming links, absolute URLs are just one option. When linking to something within the same site and domain as the page containing the link, a relative URL can be used instead.<br>
+Creating a relative URL is not only useful for the A element (linking), but it is also a skill used to reference image files, video files, CSS, JavaScript files, or any other where a file’s path is specified. <br>
+To create a relative URL, omit the domain name but include the initial slash at the beginning. This tells the browser to start from the root level of the file structure, which is the outermost top level. Alternatively, we can write the path to be relative to the file where the link is written.<br>
+<p>
+  Here is an example to help understand how URLs work. Imagine there is a file called styles.css in a directory named CSS. Let's say we want to include a link in our CSS file that points to the logo.gif file, which is located in the images folder. We have two options to write the URL: 
+
+/images/logo.gif 
+../images/logo.gif
+The first version, /images/logo.gif, creates a URL that is relative to the root level. It means the browser will start looking for the file from the root of the website. On the other hand, the second version, ../images/logo.gif, creates a URL that is relative to the location of the file where the URL is written. The ".." followed by a slash means going up one level in the directory structure.
+</p>
+
+**Navigation**
+
+Let's explore common ways to make menus or navigation bars. Imagine we want to make a main menu bar for our website. We have four links: home, people, prices, and contact. <br>
+<pre>
+  `<nav role="navigation" aria-lable="main-menu">
+    <ul class="navbar">
+      <li><a href="/">Home</a></li>
+      <li><a href="People">People</a></li>
+      <li><a href="Prices">Prices</a></li>
+      <li><a href="Contact">Contact</a></li>
+    </ul>
+  </nav>`
+</pre>
+Each link is wrapped in an element with the correct URL, and then enclosed in an "li" element to create a list of links. To maintain the order, wrap the whole list in a "ul" element, which represents an unordered list. Finally, encompass the entire menu in a "nav" element to indicate that it is the site's navigation.
+To give the menu a visual appearance, apply CSS styling. Without the styling, it appears as a plain list, however, we also want screen readers and assistive devices to understand that it is the main menu. Now add some attributes to convey its purpose. Assign the role "navigation" to the "nav" element, which signifies that it represents the main navigation of the page. Additionally, include an "aria label" for the main menu, providing a descriptive label that can be read aloud by a screen reader. Remember, this is not the only way to correctly mark up a main navigation menu. 
+
 
 ## 🖼 HTML Working with Graphics and Images
 
