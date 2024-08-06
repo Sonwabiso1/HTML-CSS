@@ -77,6 +77,7 @@ Use this link below to learn more about Date and Time Inputs. <br>
 
 <p>
   Sometimes you might want to showcase code on a webpage. Let's say you are writing an article on webpage creation or you want to explain some code syntax. Here is an example: we have a sentence with CSS code in the middle. We want to highlight that code and make it look like actual code. For this, use the code element.
+  Put an opening code tag before the CSS snippet and a closing code tag afterward.
 </p>
     
 Let's discuss the br and pre elements. Usually, when we write code, we can add as many spaces and line breaks as we want, and the browser will ignore them. <br>
@@ -104,9 +105,11 @@ Whenever you are unsure about what is happening, just turn to the developer tool
   We have already explored one attribute when discussing the time element. Keep in mind that certain attributes are specific to particular elements, such as the daytime attribute, which we only use with the time element. On the other hand, some attributes work with multiple elements but not all of them.<br>
 When looking at global attributes in HTML that work universally, we will focus on four highly useful ones. The class attribute is the most commonly used. It allows us to assign a reusable name to any element, which can then be styled using CSS for all elements sharing that class. 
 </p>
+
 Another popular attribute is the ID. It is similar to the class attribute, but we can only use unique names once on an entire HTML page. IDs can be used for CSS targeting, but are more specific, which can sometimes cause issues. As a result, CSS developers usually prefer using classes. <br>
 However, IDs come in handy when we need to address specific elements in JavaScript or targeted links. <br>
 HTML offers many attributes that enhance user interaction and provide hooks into browser power. These attributes, such as "content editable," allow interaction with the screen, keyboard, and assistive devices. <br>
+
 
 **ARIA Roles**
 
@@ -114,7 +117,8 @@ HTML offers many attributes that enhance user interaction and provide hooks into
 ARIA Roles are like extra attributes that we can add to HTML elements to make them more meaningful and help browsers understand what they represent. The goal is to rely on proper HTML elements to convey the right message about the content's meaning, without needing ARIA Roles.<br>
 ARIA Roles come into play when we want to provide essential information to assistive technologies like screen readers, braille displays, and magnifiers to ensure a website is fully accessible. ARIA came about when the web began replacing native applications, and it is particularly valuable for ensuring that everyone can use the full functionality of a complex interface in an app.
 </p>
-Developer tools in Browsers like firefox and Chrome have an Accesibility Inspector. The accessibility tree is like a companion to the DOM tree, which the browser creates from the website's content. While the DOM tree represents the structure of the HTML, the accessibility tree is crucial for assistive devices like screen readers. It allows them to provide a better experience to users. 
+Developer tools in Browsers like firefox and Chrome have an Accesibility Inspector. The accessibility tree is like a companion to the DOM tree, which the browser creates from the website's content. While the DOM tree represents the structure of the HTML, the accessibility tree is crucial for assistive devices like screen readers. It allows them to provide a better experience to users. <br>
+
 
 **Formatting HTML**
 
