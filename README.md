@@ -61,6 +61,8 @@ An example would be the datetime attribute which allows us to specify the date o
 </p>
 
 **HTML Date and Time Inputs**
+
+
 This element is used to mark anything that specifies a time of day, a date, or a duration.<br>
 To format a specific moment or range in time in a way that computers can understand, we use the `<time>` element.
 Use this link below to learn more about Date and Time Inputs. <br>
@@ -68,6 +70,15 @@ Use this link below to learn more about Date and Time Inputs. <br>
 
 **HTML Code, pre and br**
 
+Sometimes you might want to showcase code on a webpage. Let's say you are writing an article on webpage creation or you want to explain some code syntax. Here is an example: we have a sentence with CSS code in the middle. We want to highlight that code and make it look like actual code. For this, use the code element. Put an opening `<code>` tag before the CSS snippet and a closing code tag afterward. <br>
+Let's discuss the br and pre elements. Usually, when we write code, we can add as many spaces and line breaks as we want, and the browser will ignore them. <br>
+The `<br>` element adds a line break and `<pre>` elements maintains the space between the tags.
+
+**HTML Superscripts, Subscripts and Small text**
+
+Subscripts, superscripts, and small text can be used where you need to mark up certain bits of content as having a different meaning than the rest. Subscripts are characters that are set below the normal baseline for text. Did you ever take a chemistry class and learn how to write the formula for water, H2O, where the two are lower down than the H and the O? The two characters are typeset as a subscript. It is set lower down. Superscripts are characters that are set above the normal baseline of text. <br>
+
+We use `<sup>`, `<sub>` elements to achieve this. And then we use `<small>` to achieve small text in webpage.
 
 ## HTML Capabilities
 
