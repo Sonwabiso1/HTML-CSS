@@ -98,9 +98,22 @@ However, IDs come in handy when we need to address specific elements in JavaScri
 HTML offers many attributes that enhance user interaction and provide hooks into browser power. These attributes, such as "content editable," allow interaction with the screen, keyboard, and assistive devices. <br>
 
 **ARIA Roles**
+
 ARIA Roles are like extra attributes that we can add to HTML elements to make them more meaningful and help browsers understand what they represent. The goal is to rely on proper HTML elements to convey the right message about the content's meaning, without needing ARIA Roles.<br>
 ARIA Roles come into play when we want to provide essential information to assistive technologies like screen readers, braille displays, and magnifiers to ensure a website is fully accessible. ARIA came about when the web began replacing native applications, and it is particularly valuable for ensuring that everyone can use the full functionality of a complex interface in an app.
+Developer tools in Browsers like firefox and Chrome have an Accesibility Inspector. The accessibility tree is like a companion to the DOM tree, which the browser creates from the website's content. While the DOM tree represents the structure of the HTML, the accessibility tree is crucial for assistive devices like screen readers. It allows them to provide a better experience to users. 
 
+**Formatting HTML**
+
+Remember how we said that HTML does not pay much attention to spaces, tabs, or line breaks? Well, there are a couple of exceptions. <br>
+In HTML, comments are inserted by typing `<!--` at the start and `-->` at the end. These comments are disregarded by the browser.
+
+**Unusual Characters**
+
+The symbols <, >, and & are important characters in HTML, but what happens when we want to actually use them in our content?<br>
+If we write these symbols with spaces around them, they will appear as regular content. However, if we start writing something that resembles an HTML element, it magically disappears. The browser assumes that it is part of HTML code and does not display it. Now, if you are using a content management system like WordPress or a tool like markdown, chances are it will handle these characters for you without any issues but there may be times when you need to take care of it yourself.<br>
+We can use the code "&nbsp;" to insert a non-breaking space between the two names, ensuring they stay on the same line. <br>
+The [W3C](https://www.w3schools.com/html/html_symbols.asp) has a handy reference chart for all these character entities that you can use. 
 
 ## 🔗 HTML Navigation and Linking
 
