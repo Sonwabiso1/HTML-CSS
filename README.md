@@ -51,16 +51,19 @@ These two elements serve a semantic purpose. They tell the computer, "Hey, this 
 With CSS we can make these elements look however we want.
 
 <p>
-  Lets talk about qoutes that are not blockqoutes but appear within the text.  These quotes are simply typed in, but we believe they should be curly quotes, not straight ones. However, different languages and regions have their own conventions for displaying quote marks.<br>
+  Lets talk about qoutes that are not blockqoutes but appear within the text.  These quotes are simply typed in, but we believe they should be curly quotes, not straight ones. However, different languages and regions have their own conventions for displaying quote marks.
 </p>
 
 To make things easier, we can use the `<q>` element in HTML, which stands for quote. By using this element, the browser will automatically provide the appropriate quote marks for us.
+
 <p>
-Comparing the block quote element to the `<q>` element is a good example of understanding HTML. Some HTML elements, like `<qstrong>`, `<b>`, `<I>`, and `<em>`, are called "inline" because they are meant to wrap around phrases of text that are inline with other content. They serve a similar purpose as the `<q>` element. `<br>`
-There are certain elements in HTML known as block-level elements, like block quotes, paragraphs, and unordered lists. These elements essentially create separate blocks on the page. You can think of them as standalone entities that can be followed by another block. <br>
+Comparing the block quote element to the `<q>` element is a good example of understanding HTML. Some HTML elements, like `<strong>`, `<b>`, `<I>`, and `<em>`, are called "inline" because they are meant to wrap around phrases of text that are inline with other content. They serve a similar purpose as the `<q>` element.
+There are certain elements in HTML known as block-level elements, like block quotes, paragraphs, and unordered lists. These elements essentially create separate blocks on the page. You can think of them as standalone entities that can be followed by another block. 
+</p>
+
 HTML elements can have attributes provide additional information to HTML elements.<br>
 An example would be the datetime attribute which allows us to specify the date or time in a format that computers can understand. We write it like this: `<time datetime="2025-05-08">May 8, 2025</time>`.
-</p>
+
 
 **HTML Date and Time Inputs**
 
