@@ -1,6 +1,6 @@
-# HTML & CSS INTRODUCTION
+# 🌐 HTML & CSS INTRODUCTION
 
-## Introduction to HTML
+## 👩‍💻 Introduction to HTML
 
 **What is HTML?**
 
@@ -12,7 +12,7 @@ CSS, short for Cascading Style Sheets, is like the stylist of a web page. It is 
 
 JavaScript is a programming language that allows you to create really cool and interactive stuff. When you have a fancy and complex interface on a website, chances are JavaScript is behind the scenes making it work smoothly for the users.
 
-## HTML Text Formatting
+## 🧾 HTML Text Formatting
 
 HTML is a language used to structure web pages. It uses tags, which are enclosed in less-than and greater-than symbols, to mark different elements. Tags come in two types: opening tags and closing tags.
 
@@ -80,16 +80,36 @@ Subscripts, superscripts, and small text can be used where you need to mark up c
 
 We use `<sup>`, `<sub>` elements to achieve this. And then we use `<small>` to achieve small text in webpage.
 
-## HTML Capabilities
+## 📚 HTML Capabilities
 
-## HTML Navigation and Linking
+**Troubleshooting and Debugging HTML Code**
 
-## HTML Working with Graphics and Images
+In popular desktop browsers like Firefox, there is a hidden treasure trove of information that reveals what is going on with a website's code and performance. 
 
-## HTML Working with Media
+To access the developer tools, we can either right-click on the demo and select "inspect element," or opt to go to "tools," then "web developer," and choose "inspector." This will open up the developer tools, which offer a wide range of tabs with different tools or controls as it is sometimes also referred to.<br>
+Whenever you are unsure about what is happening, just turn to the developer tools in your browser to figure things out.
 
-## HTML Content Identification
+**HTML Attributes**
 
-## HTML Working with Forms and Interactive Elements
+We have already explored one attribute when discussing the time element. Keep in mind that certain attributes are specific to particular elements, such as the daytime attribute, which we only use with the time element. On the other hand, some attributes work with multiple elements but not all of them.<br>
+When looking at global attributes in HTML that work universally, we will focus on four highly useful ones. The class attribute is the most commonly used. It allows us to assign a reusable name to any element, which can then be styled using CSS for all elements sharing that class. <br>
+Another popular attribute is the ID. It is similar to the class attribute, but we can only use unique names once on an entire HTML page. IDs can be used for CSS targeting, but are more specific, which can sometimes cause issues. As a result, CSS developers usually prefer using classes. <br>
+However, IDs come in handy when we need to address specific elements in JavaScript or targeted links. <br>
+HTML offers many attributes that enhance user interaction and provide hooks into browser power. These attributes, such as "content editable," allow interaction with the screen, keyboard, and assistive devices. <br>
 
-## Organizing Tabular Information in HTML
+**ARIA Roles**
+ARIA Roles are like extra attributes that we can add to HTML elements to make them more meaningful and help browsers understand what they represent. The goal is to rely on proper HTML elements to convey the right message about the content's meaning, without needing ARIA Roles.<br>
+ARIA Roles come into play when we want to provide essential information to assistive technologies like screen readers, braille displays, and magnifiers to ensure a website is fully accessible. ARIA came about when the web began replacing native applications, and it is particularly valuable for ensuring that everyone can use the full functionality of a complex interface in an app.
+
+
+## 🔗 HTML Navigation and Linking
+
+## 🖼 HTML Working with Graphics and Images
+
+## 🎥 HTML Working with Media
+
+## 🔍 HTML Content Identification
+
+## 📚 HTML Working with Forms and Interactive Elements
+
+## 📊 Organizing Tabular Information in HTML
