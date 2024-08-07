@@ -254,7 +254,8 @@ Due to the intricacies involved, it is common for websites to utilize embed code
 <p>
   To display these captions on the video, insert a track element within the video element. Similar to the source element, it is one of the options the browser uses to render the video player. On the track element, use the source attribute to specify the file, the kind attribute to indicate that it contains captions, and a label attribute to display the caption option as "English" in the player. Additionally, use the source lang attribute to indicate the language and add a default attribute to make this track the default choice when captions are enabled.
 </p>
-Captions and subtitles are often required by law to be included.
+
+Captions and subtitles are often required by law to be included.<br>
 
 **Embessing Media via Iframes**
 
@@ -264,7 +265,7 @@ Embedding refers to taking content from one site and placing it within the middl
   There is a wide range of content that can be embedded on a page. For instance, a map from Google or Mapbox, a code demo from CodePen or Glitch, or even a slide deck from Speaker Deck or Notist. It is common practice to embed complex content from a service that handles the technical aspects.
 </p>
 
-Syntax<br>
+Syntax:<br>
 `<iframe src="url" title="description"></iframe>`
 
 <p>
@@ -274,6 +275,61 @@ Syntax<br>
 When adding Iframes always think about the security issues.
 
 ## 🔍 HTML Content Identification
+
+**HTML Language Support**
+
+<p>
+  The internet is worldwide, and people speak various languages. In HTML, there are tools to indicate the language of your content. By setting things up correctly, search engines will understand which language websites are in. Spell checkers will provide the appropriate dictionaries, and when a browser reads the content aloud, it will pronounce the words correctly. 
+</p>
+
+```html
+<html lang="en-US">
+  ...
+</html>
+```
+<p>
+  The lang attribute is used to specify the language of a webpage. If the whole page is in one language, it is quite simple. Set the language on the main element that wraps everything else, which is usually the HTML element. It may only be required to set it once, like in a template file that applies to the entire site, but do not forget to do it! 
+</p>
+
+<p>
+   If your webpage has multiple languages, specify the language for each part of the content. Use the lang attribute on any element. For example, if most of the page is in Mexican Spanish but there are block quotes in Nahuatl, use lang="es-mx" on the outer HTML element and lang="nah" on the block quote elements. 
+</p>
+
+<p>
+  It is also important to specify the content's direction. Most languages flow from left to right horizontally, but some flow from right to left. Use the dir attribute to indicate the direction, and it can be applied to any element. If all the content on your page follows the same direction, define it once on the outer HTML element.
+</p>
+
+`<html lang="en-gb" dir="ltr">`<br>
+`<html lang="ar" dir="rtl">`<br>
+<p>
+According to the examples, one of them is indicated that the content will be in British English and it goes left to right. The other example shows that this page is in Arabic and the content flows from right to left. When there is a mix of content, ensure to indicate the change in direction for each phrase is set.  
+</p>
+
+`<meta charset="UTF-8">`<br>
+<p>
+ To wrap things up, do not forget to set the charset for your project. What is that? Well, each language uses its own set of characters or alphabet. In the past, computer character sets were limited and mainly focused on the Latin alphabet. You may have heard of ASCII, which was created in the 1960s and consisted of only 128 characters from English typewriters. Nowadays, Unicode, particularly UTF-8, is widely used. It is like a massive specification that encodes content to support a vast range of characters, scripts, and even emojis. Unicode started with around 7,000 characters in 1991 and has now expanded to over 137,000, aiming to encompass all languages, scripts, and communication forms like Braille and musical notation.
+</p>
+
+<p>
+  To specify the charset in HTML, simply include a meta charset tag that equals UTF-8. Place this meta element within the head element on every page of the website, which will be explained further in the chapter eight: HTML Integrations.
+</p>
+
+**HTML Generic Elements, Div and Span**
+
+<p>
+  Sometimes we simply need a method to group elements or highlight a phrase. Other times, we need to target a specific part of the DOM with CSS or Javascript, even if there is no real meaning behind it. In such cases, we have two trusty elements at our disposal: div and span. If you have worked as a developer writing HTML, chances are you have come across these elements before.
+</p>
+
+`<div>` Block level element<br>
+`<span>` Inline element
+
+<p>
+  Technically you can get away with using divs and spans for everything. Some developers even put their titles in divs and make spans pretend to be buttons. The HTML will not give an error, and the browser will still try its best to do its job and parse the page. But to be honest, it is not good practice. It adversely affects many users. We strongly urge you to avoid using divs and spans for every little thing. Opt for the appropriate HTML element that serves the purpose. 
+</p>
+
+<p>
+  Now, with that being said, there are times when a generic element is needed. Div is a block-level element, while span is an inline element. They essentially do nothing until CSS or Javascript is applied to them.
+</p>
 
 ## 🧠 HTML Integration
 
