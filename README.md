@@ -204,11 +204,11 @@ The audio element is different from the image element because it has both an ope
 <p>
   This can be helpful if a new file format is used that is not supported in all browsers while providing a fallback for older ones. To achieve this, remove the source attribute from the audio element and place it on a separate source element. This accomplishes the same outcome as the previous example but allows for the addition of other source elements with alternative audio file formats.<br>
 ```html
-<audio controls>
+  <audio controls>
   <source src="audio1.mp3" type="audio/ogg">
   <source src="audio2.mp3" type="audio/mpeg">
   Your browser does not support this type of audio.
-</audio>
+  </audio>```
 ```
 </p>
 
@@ -219,7 +219,7 @@ Furthermore, it is possible to provide fallback text within the audio element, w
 <p>
   Just like the audio element, the video element has an opening and closing tag. To display a video, use the source attribute to specify the video file. And if the controls attribute is added, the browser will automatically create a video player.<br>
 ```html
-  <video controls>
+<video controls>
   <source src="video1.mp3" type="video/mp4">
   <source src="video2.mp3" type="video/webm">
 </video>
