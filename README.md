@@ -203,12 +203,13 @@ The audio element is different from the image element because it has both an ope
 </p>
 <p>
   This can be helpful if a new file format is used that is not supported in all browsers while providing a fallback for older ones. To achieve this, remove the source attribute from the audio element and place it on a separate source element. This accomplishes the same outcome as the previous example but allows for the addition of other source elements with alternative audio file formats.<br>
+
 ```html
   <audio controls>
-  <source src="audio1.mp3" type="audio/ogg">
-  <source src="audio2.mp3" type="audio/mpeg">
-  Your browser does not support this type of audio.
-  </audio>```
+    <source src="audio1.mp3" type="audio/ogg">
+    <source src="audio2.mp3" type="audio/mpeg">
+    Your browser does not support this type of audio.
+  </audio>
 ```
 </p>
 
@@ -218,6 +219,7 @@ Furthermore, it is possible to provide fallback text within the audio element, w
 
 <p>
   Just like the audio element, the video element has an opening and closing tag. To display a video, use the source attribute to specify the video file. And if the controls attribute is added, the browser will automatically create a video player.<br>
+
 ```html
 <video controls>
   <source src="video1.mp3" type="video/mp4">
@@ -256,7 +258,20 @@ Captions and subtitles are often required by law to be included.
 
 **Embessing Media via Iframes**
 
+Embedding refers to taking content from one site and placing it within the middle of another site's page. 
 
+<p>
+  There is a wide range of content that can be embedded on a page. For instance, a map from Google or Mapbox, a code demo from CodePen or Glitch, or even a slide deck from Speaker Deck or Notist. It is common practice to embed complex content from a service that handles the technical aspects.
+</p>
+
+Syntax<br>
+`<iframe src="url" title="description"></iframe>`
+
+<p>
+  When using a content management system (CMS) that someone else has set up, like WordPress or Drupal, you might not be able to simply copy and paste random embed codes from other websites. These CMS platforms usually have specific ways to allow URLs or shortcodes from trusted sources. To embed things like YouTube videos, it is best to consult someone who knows how to use the CMS effectively.
+</p>
+
+When adding Iframes always think about the security issues.
 
 ## 🔍 HTML Content Identification
 
