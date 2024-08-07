@@ -192,6 +192,72 @@ This markup ensures that the image and caption are semantically connected, enhan
 
 ## 🎥 HTML Working with Media
 
+**Working with Audio**
+
+The audio element is different from the image element because it has both an opening and a closing tag. This makes it more modern and gives it more power and flexibility. Just like the image element, we use a source attribute to provide the URL of the audio file. <br>
+
+`<audio controls src="audio.mp3"></audio>` <br>
+
+<p>
+  You might wonder why there is both an opening and closing tag for the audio element. Well, that is because the source element can be used to specify multiple audio files, similar to how the picture element was used. 
+</p>
+<p>
+  This can be helpful if a new file format is used that is not supported in all browsers while providing a fallback for older ones. To achieve this, remove the source attribute from the audio element and place it on a separate source element. This accomplishes the same outcome as the previous example but allows for the addition of other source elements with alternative audio file formats.<br>
+```
+<audio controls>
+  <source src="audio1.mp3" type="audio/ogg">
+  <source src="audio2.mp3" type="audio/mpeg">
+  Your browser does not support this type of audio.
+</audio>
+  ```
+</p>
+
+Furthermore, it is possible to provide fallback text within the audio element, which will only be displayed if the browser does not understand the audio element at all. 
+
+**Working with Video**
+
+<p>
+  Just like the audio element, the video element has an opening and closing tag. To display a video, use the source attribute to specify the video file. And if the controls attribute is added, the browser will automatically create a video player.<br>
+```
+<video controls>
+  <source src="video1.mp3" type="video/mp4">
+  <source src="video2.mp3" type="video/webm">
+</video>
+  ```
+</p>
+
+<p>
+  Just like with image formats like PNG, JPEG, GIF, or SVG, there are different codecs that can be used to encode video files. Video files contain a lot of data, and if not compressed, they become too large to be efficiently transmitted over the internet. Internet videos, therefore, use a mechanism to compress all the data into a smaller package. 
+</p>
+
+<p>
+  There are a couple of issues that come with working with videos in HTML. One of them is that a commonly used video codec H.264 is patented and may increase in pricing. HTML also does not have a mechanism to switch video quality based on screen sizes and internet connections. Major streaming platforms such as Netflix, Hulu, HBO, YouTube, and Vimeo tackle this issue using a technique called adaptive bitrate streaming. This complex process involves a server farm of transcoding robots, ensuring seamless switching between different resolutions as users watch videos.
+</p>
+
+Due to the intricacies involved, it is common for websites to utilize embed codes from video hosting services rather than directly employing the video element. This choice is often made to simplify the process and leverage the capabilities provided by such services. 
+
+**Working with Captions and Subtitles**
+
+<p>
+  It is quite amazing how audio and video can be added to a website, but not everyone can always hear or understand it. Some people may be deaf, while others may have intermittent hearing or difficulty understanding content due to various other factors. Even for those who can hear, it is not always convenient to listen. 
+</p>
+
+<p>
+  For example, you might want to watch a video, but you cannot use speakers or headphones in certain places. Or perhaps you are listening, but the speaker's accent or fast pace makes it hard to comprehend. You might be experiencing one of these situations right now while using captions for a video. Luckily, the web gives the power to provide content in multiple ways at the same time. 
+</p>
+
+<p>
+  We use the track element and link it to a text file to add captions to the video. This element adds functionality to the video player, allowing viewers to toggle captions on and off or switch between different subtitle options. On the web, a file format called ibvtt, which stands for web video text tracks, will be used. It is a simple text file with a vtt extension that follows a specific convention for providing information. In the file, each line of text is accompanied by a time code, indicating when it should be displayed in the video.
+</p>
+<p>
+  To display these captions on the video, insert a track element within the video element. Similar to the source element, it is one of the options the browser uses to render the video player. On the track element, use the source attribute to specify the file, the kind attribute to indicate that it contains captions, and a label attribute to display the caption option as "English" in the player. Additionally, use the source lang attribute to indicate the language and add a default attribute to make this track the default choice when captions are enabled.
+</p>
+Captions and subtitles are often required by law to be included.
+
+**Embessing Media via Iframes**
+
+
+
 ## 🔍 HTML Content Identification
 
 ## 🧠 HTML Integration
