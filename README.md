@@ -219,7 +219,7 @@ Furthermore, it is possible to provide fallback text within the audio element, w
 <p>
   Just like the audio element, the video element has an opening and closing tag. To display a video, use the source attribute to specify the video file. And if the controls attribute is added, the browser will automatically create a video player.<br>
 ```html
-<video controls>
+  <video controls>
   <source src="video1.mp3" type="video/mp4">
   <source src="video2.mp3" type="video/webm">
 </video>
