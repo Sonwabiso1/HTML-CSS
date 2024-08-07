@@ -333,6 +333,55 @@ According to the examples, one of them is indicated that the content will be in 
 
 ## 🧠 HTML Integration
 
+**HTML Page**
+
+<p>
+  When you want to visit a website, you open a web browser or web view and enter a URL. You can either type it in the address bar, click on a search result or link, or even open an app that triggers it. Regardless, a URL is involved. The web server responds by sending back the specific HTML file located at that address. 
+</p>
+<p>
+  In the early days of the web, everything needed to display a webpage was contained in a single HTML file, along with images, but things have gotten more complex now. Text is often stored in databases, and multiple static files are combined in real-time, customized for each user. Visual styling is in CSS files, JavaScript is in separate JavaScript files, and there are additional files for images, video, audio, and ads.
+</p>
+
+<p>
+  Nowadays, what users see when a page loads is usually a mix of different files. However, the basic process of the web remains the same. Users visit a URL, which prompts a request for an HTML file, and the server returns a single HTML file. The browser reads the HTML file and follows its instructions. This process is consistent every time. So, that initial HTML file that is returned when a web page is requested is incredibly important. It serves as the central hub for everything that happens after the site first loads.
+</p>
+Once the HTML file is built, there are a few crucial parts that every web page needs. 
+
+1. Firstly, the file should begin with a doctype statement, which indicates the era of this HTML file. In the past, there were different doctype declarations for older HTML versions. By including this one, we are saying, "Hey, this is a modern web page, so follow modern best practices and treat it accordingly." 
+2. Next, we enclose everything else on the page within an HTML element, which means an element named HTML. It tells us that all the content within it is HTML. Place the opening HTML tag at the top and the closing HTML tag at the bottom. 
+
+<p>
+Inside the HTML element, there are two main parts where everything goes: the head and the body. Create them using the head and body elements. The head contains all the metadata that the browser needs to know but will not display on the page. The body, on the other hand, is for all the content and is composed of various elements already discussed in this course. 
+</p>
+
+**Document Head**
+
+<p>
+  The Head of a html file is where you put additional information about the webpage such as the language, character set attribute, title and search engine optimization tags. You may also include links to different file e.g a Content Delivery Network(CDN), CSS and JavaScript files etc. 
+</p>
+<p>
+  The link element is a crucial component used extensively within the head section. It serves to connect various assets that should load, such as CSS files, fonts, and favicons. To inform the browser about the type of asset, utilize the rel attribute.
+</p>
+<p>
+  The script tag is a commonly used element in an HTML document's head. It instructs the browser to load a JavaScript file. Although it is typically placed at the end of the document, some also include it in the head. <br>
+
+  `<script src="index.js"></script>`
+  
+</p>
+
+**Content Structuring**
+
+<p>
+  Lets discuss the typical structure inside the body.
+</p>
+
+1. The main element is used once per webpage and tells the browser where the main content is located.
+2. The header and footer elements mark the header and footer areas on the page. Do not confuse header with head though. Head is where the file's metadata lives and is not displayed to users. Header is used for site headers, article headers, and headers within the content. A header is usually found at the top of most web pages and may include a logo, site name, and navigation.
+3. The footer signifies that there are extra things to convey, regardless of its position on the page.
+4. The article element wraps around any type of content unit, whether it is a long written article, a short snippet, a teaser card, a tweet, or even an app element. It represents a standalone unit of content.
+5. The section element is used to mark sections of content. For example, in a long essay with subheadings, each segment can be wrapped in a section element. It is also useful for dividing different topic zones on a website. Each section typically starts with its own headline.
+6. Lastly, the aside element is for content that is off to the side, like sidebar information or additional details that accompany an article but are not part of its main flow. Advertisements can also be marked as an aside. Although the position on the page does not matter, the semantic meaning of these elements is crucial. 
+
 ## 📚 HTML Working with Forms and Interactive Elements
 
 ## 📊 Organizing Tabular Information in HTML
