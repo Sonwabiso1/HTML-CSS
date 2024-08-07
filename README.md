@@ -470,3 +470,22 @@ Inside the HTML element, there are two main parts where everything goes: the hea
 </p>
 
 ## 📊 Organizing Tabular Information in HTML
+
+**HTML Tables**
+
+<p>
+  You might have heard somewhere along the way that HTML tables are evil, that you should never use a table, or at least that is what some people have heard or thought they heard but it is not true. It is not bad to use an HTML table for tabular data. In fact, you should use an HTML table when your content is a table, absolutely. What you should not do is misuse HTML table elements and pretend that you are making a table when you are not. 
+</p>
+
+**Building HTML Tables**
+
+To create an HTML table, you use several different HTML elements in just the right combination. Table, TR, TH, and TD. 
+
+<p>
+  The table element wraps around the whole table, around all our content and markup for that table, marking the beginning and end of the table itself. The TR element stands for table row and wraps around a set of elements, defining them as belonging to the same row. The TH element stands for table header and defines a header for a column. The TD element stands for table data and marks up the cells of data. 
+</p>
+<p>
+  Those are the basics of table markup. There is a lot more that can be done to create a complex HTML table, ways to have content span multiple rows, or multiple columns. We could define a header, body, and footer for the table, or add a caption. There are many courses readily available that go deeper into HTML tables, including how to make an HTML email template. For this course, what is covered is the basics of an HTML table, the table element, TR for table rows, TH to mark content that is in a header, and TD for marking up the content of each table cell.
+</p>
+
+--
