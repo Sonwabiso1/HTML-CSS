@@ -521,8 +521,142 @@ To create an HTML table, you use several different HTML elements in just the rig
 ---
 ## 🎨 Introduction to CSS
 
+**What is CSS?**
+<p>
+  A style sheet is like a CSS file that holds all the styles for your webpage. This adds visual appeal to your webpage. To connect the HTML and CSS, you simply link them together. HTML and CSS are closely connected and work hand-in-hand but before we dive into CSS, let's take a quick look at HTML.
+</p>
+<p>
+CSS has two parts: <br>
+1. The selector. <br>
+2. The declaration block. 
+</p>
+
+**CSS Components**
+
+<p>
+  In CSS, each style declaration consists of two parts: <br>
+  1. A property.<br>
+  2. A value. <br>
+  
+  
+  ```
+  p{ color: blue;
+  }
+  ```
+</p>
+<p>
+  The first aspect of CSS is the selector because it is essential to be able to select specific elements in our HTML.
+</p>
 
 ## 🎯 Adding CSS Selectors
+
+**Writing your first comment and element selector**
+
+<p>
+   CSS, comments are written with a slash star and a star slash. You can leave comments for yourself too for reference while writing code. 
+</p>
+<p>
+  Now, let's talk about selectors in CSS. The first type is the element selector. If we want to select all the paragraphs on our page and make them blue, we can use the HTML element P as the selector. So, in our CSS, we write "P" without the angle brackets and set the color property to blue. It is as simple as that. We can make it more complex later, but for now, let's keep it simple.
+</p>
+
+**Writing a Class Selector**
+
+<p>
+  You can assign classes to HTML elements to create a reference point for styling. A class is an attribute that can be added to any HTML element, providing additional details about that element.
+</p>
+<p>
+ Start with the HTML code. If we want the first paragraph to be green, we can add a class attribute to the paragraph tag and give it a name like "intro." This way, it will stand out as the introductory paragraph. In CSS, we use a dot (.) before the class name to differentiate it from HTML element selectors. Write ".intro" and set the color to green. 
+</p>
+<p>
+  Heres an example of how to classes are selected in CSS:<br>
+  
+  ```html
+  .intro{
+          color: green;
+  }
+  ````
+
+</p>
+
+<br>
+
+If you want to style a specific part of a paragraph differently, you can use a `span` element with a `class` attribute. For example, let’s make the sentence about the guarantee orange and bold.
+
+### HTML:
+```html
+<p>
+  We offer a 30-day money-back guarantee. <span class="guarantee">This guarantee ensures you get a full refund if you're not satisfied with our product.</span>
+</p>
+
+
+```
+### CSS:
+```css
+.guarantee {
+  color: orange;
+  font-weight: bold;
+}
+```
+
+### Explanation:
+- In the HTML snippet, the `span` tag with `class="guarantee"` is wrapped around the specific sentence to be styled.
+- In the CSS snippet, the `.guarantee` class is selected, and the `color` is set to orange with the `font-weight` set to bold, applying the styles to the selected text.
+
+
+This code will apply the orange color and bold font to the text within the `span` with the class `guarantee`.
+
+
+**Grouping Selectors**
+
+<p>
+  There are times when you want to apply the same style to different types of selectors. For example, if we want all the paragraphs on this page to be green. 
+</p>
+
+  Most likely, you would write something like this: `li { color: green; }`. f this was your thinking, that is correct! But what if we had many other elements and classes that also needed to be green? It would be a lot of repetitive code if this route was followed. This is where grouping selectors come in handy. Instead of writing separate styles for `p` and `li` we can combine them using a comma: `p, li{ color: green; }`
+. The web browser will apply this style to all paragraphs and list items, evaluating each one individually. What about using a class? We can do that too. 
+
+**Descendent Selectors**
+
+<p>
+A descendant selector in CSS is used to apply styles to elements that are nested within other elements. It targets an element that is inside another specific element, regardless of how many levels deep it is nested.
+</p>
+
+
+### Example with Code Snippets in Markdown
+
+Let's say you have a `<div>` element that contains multiple `<p>` (paragraph) elements. You want to style only the `<p>` elements that are inside a specific `<div>` with the class `.content`.
+
+### HTML:
+```html
+<div class="content">
+  <p>This paragraph is inside the .content div and will be styled.</p>
+  <div>
+    <p>This paragraph is also inside the .content div, within a nested div, and will also be styled.</p>
+  </div>
+</div>
+
+<div class="other">
+  <p>This paragraph is inside the .other div and will not be styled.</p>
+</div>
+```
+
+### CSS:
+```css
+.content p {
+  color: blue;
+  font-size: 18px;
+}
+```
+
+### Explanation:
+- **HTML Structure:** You have two `<div>` elements, one with the class `.content` and the other with the class `.other`. Each `<div>` contains one or more `<p>` elements.
+- **CSS Descendant Selector:** The selector `.content p` targets all `<p>` elements that are descendants (children, grandchildren, etc.) of the `.content` `<div>`. 
+  - The `<p>` elements inside the `.content` div will have their text color set to blue and font size to 18px.
+  - The `<p>` inside the `.other` div will not be affected by this CSS rule.
+
+This way, the styles are applied only to the paragraphs within the `.content` div, regardless of how deeply nested they are.
+
+
 ## 🖼 CSS Images and Colors
 ## 📦 CSS Boxes, Types and Sizes
 ## 🚀 Advanced CSS Properties and Concepts
