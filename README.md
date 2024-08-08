@@ -1,5 +1,19 @@
 # 🌐 HTML & CSS INTRODUCTION
 
+# Table of Contents
+- [👩‍💻 Introduction to HTML](#-introduction-to-html)
+- [🧾 HTML Text Formatting](#-html-text-formatting)
+- [📚 HTML Capabilities](#-html-capabilities)
+- [🔗 HTML Navigation and Linking](#-html-navigation-and-linking)
+- [🖼 HTML Working with Graphics and Images](#-html-working-with-graphics-and-images)
+- [🎥 HTML Working with Media](#-html-working-with-media)
+- [🔍 HTML Content Identification](#-html-content-identification)
+- [🧠 HTML Integration](#-html-integration)
+- [📚 HTML Working with Forms and Interactive Elements](#-html-working-with-forms-and-interactive-elements)
+- [📊 Organizing Tabular Information in HTML](#-organizing-tabular-information-in-html)
+
+
+
 ## 👩‍💻 Introduction to HTML
 
 **What is HTML?**
