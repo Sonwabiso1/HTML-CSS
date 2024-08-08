@@ -1,6 +1,9 @@
 # 🌐 HTML & CSS INTRODUCTION
 
+---
+
 # Table of Contents
+- [HTML & CSS 101: Introduction to HTML](#html--css-101-introduction-to-html)
 - [👩‍💻 Introduction to HTML](#-introduction-to-html)
 - [🧾 HTML Text Formatting](#-html-text-formatting)
 - [📚 HTML Capabilities](#-html-capabilities)
@@ -11,8 +14,18 @@
 - [🧠 HTML Integration](#-html-integration)
 - [📚 HTML Working with Forms and Interactive Elements](#-html-working-with-forms-and-interactive-elements)
 - [📊 Organizing Tabular Information in HTML](#-organizing-tabular-information-in-html)
+- [HTML & CSS 102](#html--css-102-introduction-to-css)
+- [🎨 Introduction to CSS](#-introduction-to-css)
+- [🎯 Adding CSS Selectors](#-adding-css-selectors)
+- [🖼 CSS Images and Colors](#-css-images-and-colors)
+- [📦 CSS Boxes, Types and Sizes](#-css-boxes-types-and-sizes)
+- [🚀 Advanced CSS Properties and Concepts](#-advanced-css-properties-and-concepts)
 
+---
 
+# HTML & CSS 101: Introduction to HTML
+
+---
 
 ## 👩‍💻 Introduction to HTML
 
@@ -502,4 +515,17 @@ To create an HTML table, you use several different HTML elements in just the rig
   Those are the basics of table markup. There is a lot more that can be done to create a complex HTML table, ways to have content span multiple rows, or multiple columns. We could define a header, body, and footer for the table, or add a caption. There are many courses readily available that go deeper into HTML tables, including how to make an HTML email template. For this course, what is covered is the basics of an HTML table, the table element, TR for table rows, TH to mark content that is in a header, and TD for marking up the content of each table cell.
 </p>
 
---
+---
+
+# HTML & CSS 102: Introduction to CSS
+---
+## 🎨 Introduction to CSS
+
+
+## 🎯 Adding CSS Selectors
+## 🖼 CSS Images and Colors
+## 📦 CSS Boxes, Types and Sizes
+## 🚀 Advanced CSS Properties and Concepts
+
+---
+
