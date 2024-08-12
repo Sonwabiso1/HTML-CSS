@@ -658,6 +658,25 @@ This way, the styles are applied only to the paragraphs within the `.content` di
 
 
 ## 🖼 CSS Images and Colors
+<p>
+  You can use canva and search sengines like google and duckduckgo to find interesting colors to use in creating your website. There is also a color pallete website that can provide you with different color palletes if you are struggling to create one. 
+</p>
+
+**Understanding Images in CSS**
+
+<p>
+  Images cab be added either in HTML or CSS. We discussed the different suitable images for the web but for a quick recap there is: GIF, PNG, JPG.
+</p>
+<p>
+Recently, a new image format called WebP has emerged. WebP can be used for any image type and offers high compression for smaller file sizes, resulting in faster website loading times. It's expected that WebP will grow in popularity due to its versatility and efficiency in loading both photos and illustrations quickly with small file sizes.
+</p>
+<p>
+  Images taken directly from mobile phones or cameras are usually large and take longer to download. Once the dimensions are set, reducing the file size helps optimize the image for faster loading. Tools like tinypng.com or Adobe Photoshop can be used to reduce image file sizes. For example, an image on tinypng.com was reduced from 57 kilobytes to 15 kilobytes without any loss in quality. Taking this extra step improves website loading speed and enhances the user experience.
+</p>
+<p>
+  In HTML, you can use the image element to place an image on the web page alongside the text. On the other hand, CSS allows you to include background images, which are purely decorative and not essential to the webpage's text. Background images can repeat or display only a portion of the image based on configuration. 
+</p>
+
 ## 📦 CSS Boxes, Types and Sizes
 ## 🚀 Advanced CSS Properties and Concepts
 
