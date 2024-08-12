@@ -751,5 +751,31 @@ p{
 
 ## 🚀 Advanced CSS Properties and Concepts
 
+**Styling Links With CSS**
+
+
+  The best approach is to target links using the `a` anchor tag. We can specify `a` and set the color to 648fff, a nicer blue color than before. This style will apply to all links, including visited links, which will also turn blue.
+
+
+  One common exception is the `a:hover` state, which triggers when we hover over a link. In this case, the color can be changed to pink (fe6100) and the underline can be removed using `text-decoration: none`. Now, when you hover over the links, they change color and the underline disappears. 
+
+
+  What if we want separate styles for visited and unvisited links? We can achieve that too. Define the nice blue color as the `a:link` style for unvisited links, and the lovely shade of purple (785ef0) as the `a:visited` style for visited links. If you have visited links on your page, they should now appear in this pleasant shade of purple. And, of course, the hover style remains intact for when we roll our mouse over the links.
+
+**Inheritance in CSS**
+
+
+  For a webpage being styled we can do the following. First, start with the `body` element and set the font family to Arial, Helvetica, sans-serif. As expected, the entire web page changes to the Arial font. This is seen many times before, but here is something interesting. If a solid red border of four pixels are added to the body, we get a single border around the web page. Now, if we look at the HTML, we will not see the body element in SublimeText, but it is there just before the `H1` and before the closing body tag, at the end of the document. What is remarkable is that even though only the font family for the body was specified, all the HTML elements inside it inherit the same Arial font. 
+
+  <p>
+    Why does this happen? Well, it turns out that font-related styles typically inherit, which makes sense because we do not want our document to have a mishmash of different fonts. So, when we specify a font for the body, everything inside it gets styled with the same font. On the other hand, styles related to the box model, like borders, tend to apply only to the specified element in our style and do not inherit. Imagine what chaos would ensue if they did! 
+  </p>
+
+  **Debugging CSS with borders and Background Colors**
+
+  <p>
+    The best practice for debugging CSS is to put a border or a background color on the thing you are trying to style. If you cannot see it, you cannot style it.
+  </p>
+
 ---
 
