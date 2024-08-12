@@ -539,7 +539,7 @@ CSS has two parts: <br>
   2. A value. <br>
   
   
-  ```
+  ```css
   p{ color: blue;
   }
   ```
@@ -570,7 +570,7 @@ CSS has two parts: <br>
 <p>
   Heres an example of how to classes are selected in CSS:<br>
   
-  ```html
+  ```css
   .intro{
           color: green;
   }
@@ -678,6 +678,77 @@ Recently, a new image format called WebP has emerged. WebP can be used for any i
 </p>
 
 ## 📦 CSS Boxes, Types and Sizes
+
+**Understanding Type in CSS**
+
+In general, people who are not designers usually categorize fonts into two types: 
+
+1. Serif.
+2. Sans serif.
+
+<p>
+  Serif fonts have small lines at the ends of the letters called serifs. In the past, serif fonts were used for printed materials with long text blocks. When letters were manually set on a printing press, they were never perfectly aligned. The serifs helped connect the letters, making the text easier to read. 
+</p>
+<p>
+  On the other hand, sans serif fonts do not have serifs and have a more modern appearance. With computer typesetting, sans serif fonts are mainly used on the web for extended text because they look clean and are easy to read.
+</p>
+
+<p>
+  If a developer does not specify which font stack that must be applied to a website, it defaults to the users device's font stack. A font stack is a group of mulitiple of fonts.
+</p>
+
+**Understanding and Applying size in CSS**
+
+<p>
+  In web design, there are two types of sizing: absolute and relative. 
+</p>
+
+| Absolute  | Relative |
+| ----------- | ----------- |
+| Points/Pixels | Percentage |
+| Pixels | REMS |
+| Don't change with screen size | Change with screen size and zoom |
+
+| Font size | Conversion |
+| ----------- | ----------- |
+| 1rem | 16px |
+| 1.5rem x 16px | 24px |
+
+<p>
+  According to web developers, the preferred font size unit is usually "rem." In simpler terms, 1 rem is equivalent to 16 pixels. So, if the font size is specified as 1.5 rem, you can multiply it by 16 to get the size in pixels, which would be approximately 24 pixels. Conversely, if the font size is set as 0.8 rem, it is roughly the same as 13 pixels. Luckily, you do not have to perform these calculations manually because there are numerous online calculators available for this purpose. Let's check out one of those calculators.
+</p>
+
+<p>
+  The rem unit for font sizes can be used in case relative font sizes.
+</p>
+
+**Understanding the Box Model in CSS**
+<p>
+  In web development, every HTML element is like a box with different properties. These properties are always present, even if their value is zero and not visible. Let's break down how these properties work. First, we have the content, which is the text inside the box. Then, there is the border, which is like a line surrounding the content. We can choose to display all four sides of the border or just a few. And there are various styles available for the border. 
+</p>
+<p>
+  Next, we have the padding, which is the space between the border and the content. It can also have its own background color. When we add padding, we are essentially pushing the edge of the box away from the content. 
+</p>
+<p>
+  Outside the border, there is the margin, which represents the space between elements on the page. If you want to separate intersecting elements, adding some margin will do the trick. 
+</p>
+<p>
+  We can assign properties to individual sides or apply them to all four sides at once. There are shorthand values available for border, padding, and margin, which provide a more concise way to set these properties. Example of a code snippet below.
+</p>
+
+```CSS
+p{
+  border: 1px solid red;
+  border-left: 1px solid red;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+```
+
+<p>
+  Starting from the top of the slide, we can add a red border of one pixel thickness using the CSS property "border: 1px solid red." This will create a solid red border around the element. Now, if we use the property "border-left," it will only apply the red border to the left side of the box, while the other sides remain unaffected.
+</p>
+
 ## 🚀 Advanced CSS Properties and Concepts
 
 ---
